@@ -1,4 +1,4 @@
-## Setup username and email address 
+## Setup your identity: username and email address 
 git config --global user.name "Body Designer"
 git config --global user.email "BD@Lex2020.com"
 
