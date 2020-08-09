@@ -11,6 +11,7 @@ git branch
 ## Check on Git log 
 git log #View commit history
 git log --pretty=format:"%h - %an, %ar : %s" #Specify log format
+git log --all --decorate --oneline --graph   #Specify graph format
 
 # Create a new branch
 git branch <branchname>
