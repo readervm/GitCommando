@@ -1,4 +1,13 @@
-## Setup username and email address 
+/********************************************************************************/
+Change History
+
+Versio 				Author 			Comments
+
+1.0				GC1			Introducing Change history
+
+/********************************************************************************/
+
+## Setup your identity: username and email address 
 git config --global user.name "Body Designer"
 git config --global user.email "BD@Lex2020.com"
 
@@ -11,6 +20,7 @@ git branch
 ## Check on Git log 
 git log #View commit history
 git log --pretty=format:"%h - %an, %ar : %s" #Specify log format
+git log --all --decorate --oneline --graph   #Specify graph format
 
 # Create a new branch
 git branch <branchname>
@@ -39,3 +49,7 @@ git push -u origin <branchname>
 
 ## Use this when <branchname> is already exists
 git push
+
+## Undo last commit 
+git reset HEAD^ //Input ~1 to remove only last commit but leave the working tree around.
+git reset --hard HEAD^ //Input ~1 to remove only last commit and discard all changes
